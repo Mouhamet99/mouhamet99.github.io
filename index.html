@@ -14,14 +14,16 @@
 
 <body>
   <!-- header -->
+  
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fw-bold">
+    <nav class="navbar navbar-expand-lg bg-white fw-bold">
       <div class="container">
         <a class="navbar-brand" href="#" title="Sogo Simplon">
           <img src="./formations/img/simplonSN.png" alt="Logo Simplon" width="150" class=" d-inline-block align-text-top">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon sp-red"></span> -->
+          <i class="bi bi-menu-app-fill text-danger"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -44,20 +46,20 @@
               <a class="nav-link " href="">Entites</a>
             </li>
           </ul>
-          <form class="d-flex ">
-            <div class="nav-item mx-3 dropdown ">
+          <form class="d-flex flex-md-row flex-sm-column">
+            <div class="nav-item mx-3 mx-sm-0 dropdown ">
               <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                En
+                EN
               </a>
               <ul class="dropdown-menu mw-5" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="#">En</a>
+                  <a class="dropdown-item" href="#">EN</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Fr</a>
+                  <a class="dropdown-item" href="#">FR</a>
                 </li>
               </div>
-              <div class="d-flex align-items-center ">
+              <div class="d-flex align-items-center">
                 <a href="" class="sm px-3 py-2 sp-rounded-link  sp-btn-danger" >Contact</a>
               </div>
           </form>
@@ -70,7 +72,7 @@
     <img src="./formations/img/formationsproBestResolution.jpg" alt="Banner" class="img-fluid">
     <!-- barre de recherche -->
     <div class="row justify-content-center my-4">
-      <div class="col-6">
+      <div class="col-sm-8 col-md-6">
         <div class="input-group my-3">
           <input type="text" class="form-control sp-input-shadow" placeholder="Rechercher une formation"
             aria-label="Recipient's username" aria-describedby="basic-addon2">
