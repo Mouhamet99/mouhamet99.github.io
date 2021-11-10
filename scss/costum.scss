@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/reboot";
+$border-width: 5px ;            
+$hr-height: 5px !default;
+hr{
+    height: $hr-height;
+}
+
+.sp-underline{
+    width: 100%;
+    height: 4px;
+    background: red ;
+}
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+// Create my own color
+$custom-colors: (
+  "sp-red": rgb(206, 0, 51)
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

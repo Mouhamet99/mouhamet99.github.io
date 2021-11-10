@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../formations/font/Nunito_Sans/NunitoSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family:"Nunito Sans",sans-serif;
+    font-size: 0.8rem;
+}
+.sp-input-shadow:focus{
+    box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 30%);
+}
+.sp-line{
+    height: 3px !important;
+    background:#000 !important;
+    border-radius: 10px;
+    opacity: 1;
+    /* color:rgb(206, 0, 51) !important;
+    */
+} 
+.sp-red{
+    color: #ce0033;
+}
+.sp-bg-red{
+    background-color: #ce0033;
+}
+.sp-btn-danger {
+    color: #fff;
+    background-color: #ce0033;
+    border: 1px solid #ce0033;
+}
+.sp-btn-danger:hover{
+    color: #ce0033;;
+    background-color: #fff;
+    transition:0.4s;
+}
+.dropdown-menu.mw-5{
+    min-width: initial;
+    font-size: 0.8rem;
+}
+.sp-rounded-link{
+    border-radius: 40px;
+    text-decoration: none;
+    line-height: normal;
+}
+header{
+    font-size: 0.7rem;
+}
+.sp-text-sm{
+    font-size: 0.8rem;
+}
+.navbar-nav .nav-link{
+    color: #000;
+}
+.nav-link.active, .nav-link:hover{
+    color: #ce0033;
+}
+a.nav-link.active {
+    border-bottom: 4px solid #ce0033;
+}
+.left-bloc{
+    /* background-color: #E35D6A; */
+}
+.left-bloc,.right-bloc{
+    width: 100%;
+    position: relative;
+}
+.right-bloc{
+    display:-ms-grid;
+    display:grid;
+}
+.h-40{
+    height: 40vh;
+}
+.vertical-bar{
+    height: 70vh;
+    width: 20px;
+    background-color: #ce0033;
+    float: left;
+    border-radius: 40px;
+}
+.menu{
+
+    /* border: 1px solid; */
+    position: absolute;
+    /* left: -4vw; */
+    /* padding: 10px 20px; */
+    margin-left: 0;
+}
+.menu p:hover{
+    color: #ce0033;
+    background: #fff;
+    transition: 0.4s;
+}
+.menu p{
+    background-color: #ce0033;
+    color: black;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.menu p:hover span{
+    background-color: #fff;
+    border-color:#ce0033 ;
+    transition: 0.4s;
+}
+.menu p> span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color:#ce0033 ;
+    position: relative;
+    left: -15px;
+}
+.menu p> object{
+    max-width: 100%;
+    height: auto;
+}
+path.cls-1:hover{
+    fill: #ce0033 !important;
+}
+
+
