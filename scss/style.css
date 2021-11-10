@@ -6,7 +6,7 @@
 }
 body{
     font-family:"Nunito Sans",sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .sp-input-shadow:focus{
     box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 30%);
@@ -19,6 +19,21 @@ body{
     /* color:rgb(206, 0, 51) !important;
     */
 } 
+h2.sp-line-under{
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+h2.sp-line-under::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    left: 0;
+    top: 105%;
+    background:#000 !important;
+    
+}
 .sp-red{
     color: #ce0033;
 }
@@ -35,9 +50,19 @@ body{
     background-color: #fff;
     transition:0.4s;
 }
+.sp-rounded-top-15{
+    border-radius: 15px 15px 0 0;
+}
+.sp-rounded-bottom-15{
+    border-radius: 0 0 15px 15px;
+
+}
 .dropdown-menu.mw-5{
     min-width: initial;
     font-size: 0.8rem;
+}
+.col.mh-790{
+    min-height: 790px;
 }
 .sp-rounded-link{
     border-radius: 40px;
@@ -49,6 +74,9 @@ header{
 }
 .sp-text-sm{
     font-size: 0.8rem;
+}
+.sp-text-md{
+    font-size: 1rem;
 }
 .navbar-nav .nav-link{
     color: #000;
@@ -70,11 +98,15 @@ a.nav-link.active {
     display:-ms-grid;
     display:grid;
 }
+.mw-50 {
+    max-width: 50% !important;
+  }
 .h-40{
     height: 40vh;
 }
 .vertical-bar{
     height: 70vh;
+    max-height:518px;
     width: 20px;
     background-color: #ce0033;
     float: left;
@@ -125,4 +157,51 @@ path.cls-1:hover{
     fill: #ce0033 !important;
 }
 
+@media (max-width: 768px) {
+    .left-bloc{
+        /* background-color: #E35D6A; */
+        border: 1px solid;
+    }
+    .vertical-bar {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 10px;
+        width: 100%;
+        background-color: #ce0033;
+        float: none;
+        border-radius: 40px;
+    }
+    .menu{
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid; */
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .menu p{
+        text-transform: uppercase;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size:0.6rem;
+        border-radius: 4px;
+    }
+    .menu p> span {
+        width: 20px;
+        height: 20px;
+        margin: 0 8px 0px 2px;
+        border-radius: 50%;
+        left: 0;
+    }
+    .sp-btn-danger {
+        font-size: 0.6rem;
+    }
+    .sp-text-sm {
+        font-size: 0.9rem;
+    }
+}
 
