@@ -46,15 +46,17 @@ h2.sp-line-under::after{
     border: 1px solid #ce0033;
 }
 .sp-btn-danger:hover{
-    color: #ce0033;;
+    color: #ce0033;
     background-color: #fff;
     transition:0.4s;
 }
 .sp-rounded-top-15{
-    border-radius: 15px 15px 0 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .sp-rounded-bottom-15{
-    border-radius: 0 0 15px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 .dropdown-menu.mw-5{
@@ -80,9 +82,6 @@ header{
 }
 .navbar-nav .nav-link{
     color: #000;
-}
-.nav-link.active, .nav-link:hover{
-    color: #ce0033;
 }
 a.nav-link.active {
     border-bottom: 4px solid #ce0033;
@@ -204,4 +203,112 @@ path.cls-1:hover{
         font-size: 0.9rem;
     }
 }
+.sp-footer{
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../formations/img/SVG/Footer.svg);
+    background-size: cover;
+}
+.sp-footer .col{
+    /* max-width: -moz-fit-content;
+    max-width: fit-content; */
+}
+.sp-footer .col a{
+    text-decoration: none;
+}
+.sp-link-light{
+    color: #f8f9fa;
 
+}
+.sp-link-light:hover, .sp-link-light:focus {
+    color: #ce0033;
+    transition: 0.4s;
+}
+.sp-input-group{
+    display: flex;
+}
+.sp-input-group input, .sp-input-group a{
+    margin: 0;
+    border: 0;
+    
+    outline: none;
+    outline-offset: -2px;
+    border-radius: initial;
+    padding:  0.4em 0.6em;
+    
+}
+.sp-input-group #email{
+    border-radius: 4px 0 0 4px;
+}
+.sp-input-group #email:focus, .sp-input-group #email:hover{
+    outline: 1px solid #ce0033;
+}
+.sp-input-group #btn-submit{
+    border-radius:  0  4px 4px 0;
+    background-color: #ce0033;
+}
+.sp-input-group #btn-submit:hover{
+    background-color: #ce0034e0;
+    color: #fff;
+
+}
+.logo-icons{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+.sp-footer img{
+    margin: 0 auto;
+}
+.sp-footer .icons i{
+    font-size: large;
+}
+.sp-footer .logo-icons{
+    /* width: fit-content; */
+}
+.sp-footer .icons{
+    width: 70%;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.copyright{
+    width: 100%;
+    min-height:50px ;
+    background-color: #ce0033;
+    font-size: small;
+}
+.twitter-color{
+    color: #17A1FA;
+}
+.facebook-color{
+    color: #4267B2;
+}
+.youtube-color{
+    color: #FF0000;
+}
+.instagram-color{
+    color: #F24E1E;
+}
+.twitter-color:hover{
+    color: #38afff;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+.facebook-color:hover{
+    color: #607aad;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+.youtube-color:hover{
+    color: #ff4e4e;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+.instagram-color:hover{
+    color: #fc7e58;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
