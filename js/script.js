@@ -3,4 +3,5 @@ window.onload = ()=>{
     svg.addEventListener("hover", (e)=>{
         e.style.fill = "#ce0033"
     })
+
 }
