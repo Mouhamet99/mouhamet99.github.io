@@ -5,7 +5,9 @@
     font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Nunito Sans', sans-serif;
     font-family:"Nunito Sans",sans-serif;
@@ -92,8 +94,13 @@ header{
 .navbar-nav .nav-link{
     color: #000;
 }
+a.nav-link:hover {
+    color: #ce0033;
+    transition: .4s;
+}
 a.nav-link.active {
     border-bottom: 4px solid #ce0033;
+    color: #ce0033;
 }
 .left-bloc{
     /* background-color: #E35D6A; */
@@ -123,7 +130,7 @@ a.nav-link.active {
     border-radius: 40px;
 }
 .menu{
-
+    
     /* border: 1px solid; */
     position: absolute;
     top: 50%;
@@ -132,19 +139,24 @@ a.nav-link.active {
     /* left: -4vw; */
     /* padding: 10px 20px; */
 }
+.menu p:hover{
+    border-color: #ce0033;
+}
 .menu p:hover, .menu p.active{
     color: #ce0033;
     background: #fff;
     transition: 0.4s;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-
-
+    
+    
 }
 .menu p{
     background-color: #ce0033;
     color: black;
     font-weight: bold;
     color: #fff;
+    border: 1px solid transparent;
+    border-left-width: 0;
     padding: 10px;
     text-transform: uppercase;
     width: -moz-fit-content;
@@ -157,7 +169,7 @@ a.nav-link.active {
     transition: 0.4s; */
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     box-shadow: 0 0 4px 0px #000;
-    border-width: 2px;
+    border-width: 2px ;
     
 }
 .menu p> span{
@@ -187,7 +199,7 @@ path.cls-1:hover{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        height: 10px;
+        height: 4px;
         min-height: 0;
         width: 100%;
         background-color: #ce0033;
@@ -198,9 +210,9 @@ path.cls-1:hover{
         width: 100%;
         margin: 0 auto;
         /* border: 1px solid; */
-        position: relative;
+        /* position: relative; */
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-left: 0;
         padding-left: 0;
     }
@@ -208,15 +220,23 @@ path.cls-1:hover{
         text-transform: uppercase;
         width: -moz-fit-content;
         width: fit-content;
-        font-size:x-small;
+        font-size:xx-small;
         border-radius: 4px;
     }
     .menu p> span {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         margin: 0 8px 0px 2px;
         border-radius: 50%;
         left: 0;
+    }
+    .menu p:hover , .menu p.active{
+        border:none;
+        border-left: 5px solid #ce0033;
+    }
+    .menu p{
+        border:1px solid transparent;
+        border-left: 5px solid transparent;
     }
     .sp-btn-danger {
         font-size: 0.6rem;
