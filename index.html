@@ -22,7 +22,7 @@
                     <img src="./formations/img/simplonSN.png" alt="Logo Simplon" width="150"
                         class=" d-inline-block align-text-top">
                 </a>
-                <button class=" collapsed navbar-toggler border-2 border-danger" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border  border-2 border-black" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon sp-red"></span> -->
@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-3">
-                            <a class="nav-link " aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link " aria-current="page" href="#row-secondary">Accueil</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#">Fabrique</a>
@@ -49,22 +49,25 @@
                             <a class="nav-link " href="">Entites</a>
                         </li>
                     </ul>
-                    <form class="d-flex flex-lg-row flex-column">
-                        <div class="nav-item mx-3 mx-sm-0 dropdown ">
+                    <form class="d-flex flex-column flex-md-row flex-sm-column">
+                        <div class="dropdown mx-sm-0 mx-sm-1 nav-item ">
                             <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
                             </a>
-                            <ul class="dropdown-menu mw-5" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="#">EN</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">FR</a>
-                                </li>
-                            </ul>
+                            <div>
+
+                                <ul class="dropdown-menu mw-5" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">EN</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">FR</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <a  href="" class="sm px-3 py-2 mx-3  sp-rounded-link  sp-btn-danger d-block">Contact</a>
+                        <a href="" class="sm px-3 py-2 sp-rounded-link  sp-btn-danger">Contact</a>
                         <!-- <div class="d-flex align-items-center">
             </div> -->
                     </form>
@@ -72,7 +75,7 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid ">
+    <main class="container-fluid ">
         <img src="./formations/img/formationsproBestResolution.jpg" alt="Banner" class="img-fluid ">
         <!-- barre de recherche -->
         <div class="row justify-content-center my-4">
@@ -86,7 +89,7 @@
             </div>
         </div>
         <!-- Section public -->
-        <div class="row justify-content-center">
+        <section class="row justify-content-center row-secondary public-section">
             <!-- Public title -->
             <div class="col-12">
                 <div class="col-10 offset-1">
@@ -108,35 +111,67 @@
                         reiciendis ad ullam? Minus architecto officia animi quod quo sit.
                     </p>
                     <div class="row align-items-center">
-                        <!-- menu -->
-                        <div class=" col-md-2 col-sm-12 p-0 px-sm-0 text-center border border-0 border-top border-danger border-4">
-                            <div class="left-bloc my-4 d-flex align-items-center  align-items-sm-start ">
-                                <div class="vertical-bar">
-                                </div>
-                                <div class="menu ">
-                                    <p
-                                        class="active p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                        <!-- menu secondaire -->
+                        <div class="menu secondary-menu position-fixed d-md-none" >
+                            <p
+                                        class=" active align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml" data="./formations/img/SVG/IconFemmeBlanc.svg"
                                                 title="icon"></object>
                                         </span>
                                         Femme
                                     </p>
-                                    <p class="p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                    <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml" data="./formations/img/SVG/IconKidsblanc.svg"
                                                 title="icon"></object>
                                         </span>
                                         Kids
                                     </p>
-                                    <p class="p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                    <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml" data="./formations/img/SVG/IconPshblanc.svg"
                                                 title="icon"></object>
                                         </span>
                                         PSH
                                     </p>
-                                    <p class="p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                    <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                        <span class="d-flex align-items-center">
+                                            <object type="image/svg+xml"
+                                                data="./formations/img/SVG/IconDiscoverBlanc.svg" title="icon"></object>
+                                        </span>
+                                        Refugies
+                                    </p>
+                        </div>
+                        <!-- menu -->
+                        <div class="d-none d-md-inline-block col-md-2 col-sm-12 p-0 px-sm-0 text-center">
+                            <div class="left-bloc my-4 d-flex align-items-center  align-items-sm-start ">
+                                <div class="vertical-bar">
+                                </div>
+                                <div class="menu flex-column" style="border: 0ch;">
+                                    <p
+                                        class="active align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                        <span class="d-flex align-items-center">
+                                            <object type="image/svg+xml" data="./formations/img/SVG/IconFemmeBlanc.svg"
+                                                title="icon"></object>
+                                        </span>
+                                        Femme
+                                    </p>
+                                    <p class="align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                        <span class="d-flex align-items-center">
+                                            <object type="image/svg+xml" data="./formations/img/SVG/IconKidsblanc.svg"
+                                                title="icon"></object>
+                                        </span>
+                                        Kids
+                                    </p>
+                                    <p class="align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                        <span class="d-flex align-items-center">
+                                            <object type="image/svg+xml" data="./formations/img/SVG/IconPshblanc.svg"
+                                                title="icon"></object>
+                                        </span>
+                                        PSH
+                                    </p>
+                                    <p class="align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml"
                                                 data="./formations/img/SVG/IconDiscoverBlanc.svg" title="icon"></object>
@@ -254,9 +289,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Section parcours -->
-        <div class="row justify-content-center">
+        <section class="row justify-content-center row-secondary parcours-section" >
             <!-- Parcours title -->
             <div class="col-12 px-0">
                 <div class="col-10 offset-1">
@@ -277,22 +312,43 @@
                         quod
                         reiciendis ad ullam? Minus architecto officia animi quod quo sit.
                     </p>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center p-relative" >
+                            <!-- menu secondaire -->
+                            <div class="menu secondary-menu position-fixed d-md-none" >
+                                <p class="active align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                    <span class="d-flex align-items-center">
+                                        <object type="image/svg+xml" data="./formations/img/SVG/IconDiscoverBlanc.svg" title="icon"></object>
+                                    </span>
+                                    Decouverte
+                                </p>
+                                <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                    <span class="d-flex align-items-center">
+                                        <object type="image/svg+xml" data="./formations/img/SVG/father-svgrepo-com.svg" title="icon"></object>
+                                    </span>
+                                    Initiation
+                                </p>
+                                <p class="align-items-center d-flex p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
+                                    <span class="d-flex align-items-center">
+                                        <object type="image/svg+xml" data="./formations/img/SVG/IconOrienteMetierBlanc.svg" title="icon"></object>
+                                    </span>
+                                    Metier
+                                </p>
+                            </div>
                         <!-- menu -->
-                        <div class="col-md-2 col-sm-12 p-0 px-sm-0 text-center border border-0 border-top border-danger border-4">
+                        <div class="d-none d-md-inline-block col-md-2 col-sm-12 p-0 px-sm-0 text-center">
                             <div class="left-bloc my-4 d-flex align-items-center  align-items-sm-start  ">
                                 <div class="vertical-bar">
                                 </div>
-                                <div class="menu ">
+                                <div class="menu flex-column">
                                     <p
-                                        class="active p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                        class="active align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml"
                                                 data="./formations/img/SVG/IconDiscoverBlanc.svg" title="icon"></object>
                                         </span>
                                         Decouverte
                                     </p>
-                                    <p class="p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                    <p class="align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml"
                                                 data="./formations/img/SVG/father-svgrepo-com.svg"
@@ -300,7 +356,7 @@
                                         </span>
                                         Initiation
                                     </p>
-                                    <p class="p-1 my-4  pe-md-3 p-sm-1 shadow-sm rounded-end d-flex align-items-center">
+                                    <p class="align-items-center d-flex my-4 p-1 p-sm-1 pe-md-3 rounded-pill rounded-start shadow-sm">
                                         <span class="d-flex align-items-center">
                                             <object type="image/svg+xml"
                                                 data="./formations/img/SVG/IconOrienteMetierBlanc.svg"
@@ -419,123 +475,124 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Section Partenariat -->
-    <div class=" partenariat row  sp-gutter-x-0 mx-0 justify-content-center">
-        <!-- Parcours title -->
-        <div class="col-12 px-0 me-0">
-            <div class="col-10 offset-1">
-                <h2 class=" fw-bold text-uppercase sp-red sp-line-under mb-2">Par Partenariat </h2>
-                <p class="my-3">
-                    Physical space is often conceived in three linear dimensions, although modern physicists usually
-                    consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime.
-                    The concept of space is considered to be of fundamental importance to an understanding of the
-                    physical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nostrum optio id iusto
-                    doloribus suscipit similique incidunt minima molestiae alias tempora beatae. Eaque, ducimus maiores?
-                    Corporis nostrum fugit alias eum exercitationem tempore ab sapiente temporibus modi quae tempora
-                    laudantium deserunt asperiores aliquid ratione dolorum placeat omnis hic enim aperiam ducimus,
-                    labore aliquam. Vitae, adipisci ea accusam..
-                </p>
-                <div class="row me-0 row-cols-sm-1 sp-row-cols-md-3 ">
-                    <div class="my-3  justify-content-center ">
-                        <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
-                            <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
-                                <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
-                                <p class=" text-uppercase fw-bold text-white sp-text-sm">
-                                    Ecole IA Microsoft By
-                                    Simplon -
-                                    Développeur.euse en
-                                    intelligence artificielle
-
-                                </p>
-                                <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
-                                    width="30" height="30" alt="dropdown icon">
-                            </div>
-                            <div class="card-body sp-rounded-bottom-15">
-                                <img class="logo-partenaire my-3 img-fluid" src="./formations/img/miscrosoftLogo.png"
-                                    width="150" alt="logo microsoft">
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda eveniet
-                                    nobis cum ad aliquid magnam aliquam neque praesentium voluptate dolor odit ab soluta
-                                    quaerat blanditiis inventore, iusto, ut accusamus!
-                                </p>
-                                <a href="#"
-                                    class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
-                                    savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-3  justify-content-center ">
-                        <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
-                            <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
-                                <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
-                                <p class=" text-uppercase fw-bold text-white sp-text-sm">
-                                    AI Business School TPE/
-                                    PME - Développeur.euse
-                                    en intelligence
-                                    artificiell
-
-                                </p>
-                                <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
-                                    width="30" height="30" alt="dropdown icon">
-                            </div>
-                            <div class="card-body sp-rounded-bottom-15">
-                                <img class="logo-partenaire my-3 img-fluid" src="./formations/img/IESELogo.png"
-                                    width="100" alt="logo iese">
-                                <p class="card-text">
-                                    Il vise à développer les
-                                    compétences nécessaires à
-                                    l’exercice du métier
-                                    d’administrateur.ice Cloud.
-
-                                    Il vise à développer les
-                                    compétences nécessaires à
-                                    l’exercice du métier
-                                </p>
-                                <a href="#"
-                                    class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
-                                    savoir plus</a>
+        </section>
+        
+        <!-- Section Partenariat -->
+        <section class=" partenariat row  justify-content-center">
+            <!-- Parcours title -->
+            <div class="col-12 px-0 me-0">
+                <div class="col-10 offset-1">
+                    <h2 class=" fw-bold text-uppercase sp-red sp-line-under mb-2">En Partenariat </h2>
+                    <p class="my-3">
+                        Physical space is often conceived in three linear dimensions, although modern physicists usually
+                        consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime.
+                        The concept of space is considered to be of fundamental importance to an understanding of the
+                        physical Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nostrum optio id iusto
+                        doloribus suscipit similique incidunt minima molestiae alias tempora beatae. Eaque, ducimus maiores?
+                        Corporis nostrum fugit alias eum exercitationem tempore ab sapiente temporibus modi quae tempora
+                        laudantium deserunt asperiores aliquid ratione dolorum placeat omnis hic enim aperiam ducimus,
+                        labore aliquam. Vitae, adipisci ea accusam..
+                    </p>
+                    <div class="row me-0 row-cols-sm-1 sp-row-cols-md-3 ">
+                        <div class="my-3  justify-content-center ">
+                            <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
+                                <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
+                                    <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
+                                    <p class=" text-uppercase fw-bold text-white sp-text-sm">
+                                        Ecole IA Microsoft By
+                                        Simplon -
+                                        Développeur.euse en
+                                        intelligence artificielle
+    
+                                    </p>
+                                    <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
+                                        width="30" height="30" alt="dropdown icon">
+                                </div>
+                                <div class="card-body sp-rounded-bottom-15">
+                                    <img class="logo-partenaire my-3 img-fluid" src="./formations/img/miscrosoftLogo.png"
+                                        width="150" alt="logo microsoft">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda eveniet
+                                        nobis cum ad aliquid magnam aliquam neque praesentium voluptate dolor odit ab soluta
+                                        quaerat blanditiis inventore, iusto, ut accusamus!
+                                    </p>
+                                    <a href="#"
+                                        class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
+                                        savoir plus</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="my-3  justify-content-center ">
-                        <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
-                            <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
-                                <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
-                                <p class=" text-uppercase fw-bold text-white sp-text-sm">
-                                    AI Business School TPE/
-                                    PME - Développeur.euse
-                                    en intelligence
-                                    artificielle
-                                </p>
-                                <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
-                                    width="30" height="30" alt="dropdown icon">
-                            </div>
-                            <div class="card-body sp-rounded-bottom-15">
-                                <img class="logo-partenaire my-3 img-fluid" src="./formations/img/miscrosoftLogo.png"
-                                    width="150" alt="logo microsoft">
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda eveniet
-                                    nobis cum ad aliquid magnam aliquam neque praesentium voluptate dolor odit ab soluta
-                                    quaerat blanditiis inventore, iusto, ut accusamus!
-                                </p>
-                                <a href="#"
-                                    class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
-                                    savoir plus</a>
+                        <div class="my-3  justify-content-center ">
+                            <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
+                                <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
+                                    <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
+                                    <p class=" text-uppercase fw-bold text-white sp-text-sm">
+                                        AI Business School TPE/
+                                        PME - Développeur.euse
+                                        en intelligence
+                                        artificiell
+    
+                                    </p>
+                                    <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
+                                        width="30" height="30" alt="dropdown icon">
+                                </div>
+                                <div class="card-body sp-rounded-bottom-15">
+                                    <img class="logo-partenaire my-3 img-fluid" src="./formations/img/IESELogo.png"
+                                        width="100" alt="logo iese">
+                                    <p class="card-text">
+                                        Il vise à développer les
+                                        compétences nécessaires à
+                                        l’exercice du métier
+                                        d’administrateur.ice Cloud.
+    
+                                        Il vise à développer les
+                                        compétences nécessaires à
+                                        l’exercice du métier
+                                    </p>
+                                    <a href="#"
+                                        class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
+                                        savoir plus</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="my-3  justify-content-center ">
+                            <div class="card shadow-sm text-center sp-rounded-top-15 sp-rounded-bottom-15">
+                                <div class="card-header sp-bg-red  sp-rounded-top-15 emailing">
+                                    <h5 class="card-title center text-uppercase fw-bold sp-red sp-text-sm">Emailing</h5>
+                                    <p class=" text-uppercase fw-bold text-white sp-text-sm">
+                                        AI Business School TPE/
+                                        PME - Développeur.euse
+                                        en intelligence
+                                        artificielle
+                                    </p>
+                                    <img class="dropdown-icon" src="./formations/img/SVG/dropdown-svgrepo-com.svg"
+                                        width="30" height="30" alt="dropdown icon">
+                                </div>
+                                <div class="card-body sp-rounded-bottom-15">
+                                    <img class="logo-partenaire my-3 img-fluid" src="./formations/img/miscrosoftLogo.png"
+                                        width="150" alt="logo microsoft">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda eveniet
+                                        nobis cum ad aliquid magnam aliquam neque praesentium voluptate dolor odit ab soluta
+                                        quaerat blanditiis inventore, iusto, ut accusamus!
+                                    </p>
+                                    <a href="#"
+                                        class=" d-inline-block my-2  sp-text-sm  px-2 py-1 sp-rounded-link  sp-btn-danger ">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
                     </div>
-
-
-
-                </div>
-                <div class=" col-12 px-0 text-end alert">
-                    <a href="" class="text-decoration-underline alert-dark  alert-link bg-white">Afficher tout</a>
+                    <div class=" col-12 px-0 text-end alert">
+                        <a href="" class="text-decoration-underline alert-dark  alert-link bg-white">Afficher tout</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!-- Section footer -->
     <footer class="sp-footer py-5  d-sm-inline-block d-md-flex text-white justify-md-content-around">
