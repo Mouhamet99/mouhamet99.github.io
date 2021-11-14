@@ -39,7 +39,7 @@ h2.sp-line-under::after {
     content: "";
     position: absolute;
     width: 50%;
-    height: 4px;
+    height: 3px;
     left: 0;
     top: 105%;
     background: #000 !important;
@@ -120,6 +120,24 @@ a.nav-link.active {
     color: #000;
 }
 
+.banner {
+    position: relative;
+}
+.banner::after {
+    position: absolute;
+    content: "formations";
+    top: 50%;
+    /* font-size: 3rem; */
+    font-size: 4.5rem;
+    font-weight: 800;
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-transform: uppercase;
+}
 
 .left-bloc {
     /* background-color: #E35D6A; */
@@ -225,13 +243,20 @@ a.nav-link.active {
 path.cls-1:hover {
     fill: #ce0033 !important;
 }
+img.card-img-top {
+    max-width: 100%;
+    height: 160px;
+    overflow: hidden;
+    aspect-ratio: initial;
+}
 
 @media (max-width: 768px) {
-    
+    .banner::after {
+        font-size: 3rem;
+    }
     a.nav-link.active {
         border-bottom: 4px solid #ce0033;
     }
-
 
     .left-bloc {
         /* background-color: #E35D6A; */
