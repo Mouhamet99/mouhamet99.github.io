@@ -215,7 +215,7 @@ a.nav-link.active {
     text-transform: uppercase;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: small;
+    font-size: large;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
 }
 
