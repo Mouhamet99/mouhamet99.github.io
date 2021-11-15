@@ -212,7 +212,9 @@ figcaption{
     font-size: large;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
 }
-
+.text-justify{
+    text-align: justify !important;
+}
 .menu p:hover span, .menu p.active span {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     box-shadow: 0 0 4px 0px #000;
