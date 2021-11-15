@@ -97,7 +97,41 @@ header {
 a.nav-link {
     font-weight: 900;
 }
-a.nav-link:hover {
+label[for="search"] {
+    /* border: 1px solid  lightgray; */
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    
+}
+/* input[name="search"]:hover ,input[name="search"]:focus{
+        border-color: #ce0033;
+        
+    } */
+label[for="search"] input{
+    padding: 2px 16px;
+    margin-right: 10px;
+    /* height: 10px; */
+    outline: 1px solid  lightgray;
+    border-radius: 40px;
+    outline-offset:3px ;
+}
+label[for="search"] input:focus{
+    outline: 1px solid  #000;
+    transition: 1s;
+}
+label[for="search"] i{
+    position: absolute;
+    font-weight: 900;
+    cursor: pointer;
+    right: 15px;
+    
+}
+label[for="search"] i:hover{
+    color: #ce0033;
+    transform: scale(1.1);
+}
+a.nav-link:hover, a.hover-text-red:hover{
     color: #ce0033;
     transition: 0.4s;
 }
@@ -247,7 +281,10 @@ img.card-img-top {
 }
 
 @media (max-width: 768px) {
-
+    label[for="search"] input{
+        width: 100%;
+        padding: 10px 16px;
+    }
     figcaption{
         
         font-size: 2.5rem;

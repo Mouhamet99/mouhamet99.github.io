@@ -1,4 +1,10 @@
 window.onload = ()=>{
+    // let searchBtn = document.querySelector('input[name="search"]');
+    // let searchLabel = document.querySelector('label[for="search"]');
+    // searchBtn.addEventListener('focus', ()=>{
+    //     searchLabel.style.border = "1 px solid #cee0033"
+    // });
+
     // let svg = document.querySelector('path.cls-0')
     // svg.addEventListener("hover", (e)=>{
     //     e.style.fill = "#ce0033"
