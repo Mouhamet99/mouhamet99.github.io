@@ -221,12 +221,10 @@ figcaption{
     left: 5%;
 }
 
-.menu p:hover {
-    border-color: #ce0033;
-}
 
 .menu p:hover, .menu p.active {
     color: #ce0033;
+    border-color: #ce0033;
     background: #fff;
     transition: 0.4s;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -499,8 +497,8 @@ li.nav-item a{
 li.nav-item a::after{
     position: absolute;
     content: "";
-    top: 160%;
-    height: 5px;
+    top: 158%;
+    height: 4px;
     left: 50%;
     transform: translateX(-50%);
     background: #ce0033;
