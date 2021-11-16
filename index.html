@@ -47,24 +47,28 @@
                             <a class="nav-link " href="">Entites</a>
                         </li>
                     </ul>
-                    <form class="d-flex flex-column flex-md-row flex-sm-column align-items-md-center">
+                    <form class="d-flex flex-column flex-lg-row flex-md-column align-items-lg-center">
                         <label for="search"
-                            class="d-flex align-items-center justify-content-center   rounded rounded-pill">
+                            class="align-items-center d-flex justify-content-center mt-lg-0 mt-3 order-1 order-lg-0 rounded rounded-pill">
                             <input class="border-0 mw-100" id="search" type="search" placeholder="Search"
                                 aria-label="Search" name="search">
                             <i class="bi bi-search " aria-hidden="true"></i>
                         </label>
                         <div class="dropdown mx-sm-0 mx-sm-1 nav-item ">
-                            <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
+                            <!-- <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
+                            </a> -->
+                            <a class="nav-link d-flex sp-dropdown-toggle text-black" href="#" >
+                                EN
+                                <i class=" bi bi-caret-down-fill text-danger"></i>
                             </a>
-                            <ul class="dropdown-menu mw-5" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu mw-5 " aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#">EN</a>
+                                    <a class="dropdown-item sp-hover-red" href="#">EN</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">FR</a>
+                                    <a class="dropdown-item sp-hover-red" href="#">FR</a>
                                 </li>
                             </ul>
                         </div>

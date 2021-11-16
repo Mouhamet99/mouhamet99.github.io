@@ -1,14 +1,20 @@
-window.onload = ()=>{
-    // let searchBtn = document.querySelector('input[name="search"]');
-    // let searchLabel = document.querySelector('label[for="search"]');
-    // searchBtn.addEventListener('focus', ()=>{
-    //     searchLabel.style.border = "1 px solid #cee0033"
-    // });
-
-    // let svg = document.querySelector('path.cls-0')
-    // svg.addEventListener("hover", (e)=>{
-    //     e.style.fill = "#ce0033"
-    // })
+window.onload = ()=>{    
+    // =============
+    // Gestion  affichage Langue choisi sur le menu navbar
+    //==============
+    let selectedLangage = document.querySelector('a.sp-dropdown-toggle')
+    let langagesBox = document.querySelector('ul.dropdown-menu')
+    let Langages = document.querySelectorAll('ul li a.dropdown-item');
+    Langages.forEach(element => {
+        element.addEventListener('click', ()=>{
+            let regex = new RegExp(`${selectedLangage.innerText}`)
+            selectedLangage.innerHTML = selectedLangage.innerHTML.replace(regex, element.innerText)
+            langagesBox.classList.toggle('d-inline-block')
+        })
+    });
+    selectedLangage.addEventListener('click', ()=>{
+        langagesBox.classList.toggle('d-inline-block')
+    })
 
     // =============
     // Gestion  active bar menu  par section (parcours / public ) 
@@ -43,7 +49,7 @@ window.onload = ()=>{
 
 
     // =============
-    // 
+    // Gestion Affichage du  Menu Bar version mobile 
     //==============
     let sections = document.querySelectorAll(".row-secondary")
     let menus = document.querySelectorAll(".secondary-menu")
@@ -62,9 +68,7 @@ window.onload = ()=>{
                 }
             } else if (menus[index].classList.contains("sp-hidden-left")) {
                 menus[index].classList.toggle("sp-hidden-left")
-                // menus[index].classList.toggle("d-none")
                 menus[index].style.display= "none"
-                // menus[index].style.left= "-50%"
             }   
         })
     })

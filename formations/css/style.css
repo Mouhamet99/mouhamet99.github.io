@@ -46,6 +46,10 @@ h2.sp-line-under::after {
 .sp-bg-red {
     background-color: #ce0033;
 }
+.sp-hover-red:hover, .sp-hover-red:active{
+    color: #ce0033 !important;
+    background-color: #fff !important;
+}
 
 .sp-btn-danger {
     color: #fff;
@@ -277,9 +281,17 @@ img.card-img-top {
     overflow: hidden;
     aspect-ratio: initial;
 }
-
+@media (max-width: 991.98px) {
+    label[for="search"] input {
+        width: 100%;
+        padding: 10px 16px;
+    }
+    li.nav-item a::after {
+    display: none;
+    }
+}
 @media (max-width: 768px) {
-    
+
     img.card-img-top {
         height: initial;
     }
@@ -365,6 +377,7 @@ img.card-img-top {
     .sp-text-sm {
         font-size: 0.9rem;
     }
+
 }
 
 .sp-footer {
@@ -502,7 +515,7 @@ li.nav-item a{
 li.nav-item a::after{
     position: absolute;
     content: "";
-    top: 158%;
+    top: 160%;
     height: 4px;
     left: 50%;
     transform: translateX(-50%);
