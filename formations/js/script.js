@@ -15,11 +15,20 @@ window.onload = ()=>{
     //==============
     let publicMenusItems = document.querySelectorAll('.menu-public  p')
     let activePublicMenuItem = document.querySelector('.menu-public  p.active')
+    updateActiveItem(publicMenusItems,activePublicMenuItem )
+    
     let parcoursMenusItems = document.querySelectorAll('.menu-parcours  p');
     let activeParcoursMenuItem = document.querySelector('.menu-parcours  p.active')
-
-    updateActiveItem(publicMenusItems,activePublicMenuItem )
     updateActiveItem(parcoursMenusItems,activeParcoursMenuItem )
+    
+    let publicSecondaryMenusItems = document.querySelectorAll('.secondary-menu-public  p')
+    let activePublicSecondaryMenuItem = document.querySelector('.secondary-menu-public  p.active')
+    updateActiveItem(publicSecondaryMenusItems, activePublicSecondaryMenuItem )
+    
+    let parcoursSecondaryMenusItems = document.querySelectorAll('.secondary-menu-parcours  p');
+    let activeParcoursSecondaryMenuItem = document.querySelector('.secondary-menu-parcours  p.active')
+    updateActiveItem(parcoursSecondaryMenusItems, activeParcoursSecondaryMenuItem )
+
     function updateActiveItem(elements, activeElement){
         elements.forEach(element=>{
             element.addEventListener('click', function(e){
@@ -48,10 +57,13 @@ window.onload = ()=>{
             if(elt.y <= 0 &&  elt.y + elt.height >= 500) {
                 if (!menus[index].classList.contains("sp-hidden-left")) {
                     menus[index].classList.toggle("sp-hidden-left")
-                    // menus[index].style.left= "5%"
+                    menus[index].classList.toggle("classOn")
+                    menus[index].style.display= "inline-block"
                 }
             } else if (menus[index].classList.contains("sp-hidden-left")) {
                 menus[index].classList.toggle("sp-hidden-left")
+                // menus[index].classList.toggle("d-none")
+                menus[index].style.display= "none"
                 // menus[index].style.left= "-50%"
             }   
         })
