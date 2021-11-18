@@ -289,7 +289,15 @@ img.card-img-top {
     li.nav-item a::after {
     display: none;
     }
+    .menu p {
+        font-size: x-small;
+        font-weight: bold;
+    }
+    .menu {
+        z-index: 10;
+    }
 }
+
 @media (max-width: 768px) {
 
     img.card-img-top {
