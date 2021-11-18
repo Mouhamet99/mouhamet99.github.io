@@ -296,6 +296,9 @@ img.card-img-top {
     .menu {
         z-index: 10;
     }
+    .sp-text-sm {
+        font-size: x-small;
+    }
 }
 
 @media (max-width: 768px) {
