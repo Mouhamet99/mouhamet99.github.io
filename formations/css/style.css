@@ -382,7 +382,7 @@ img.card-img-top {
 
 .sp-footer {
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     background-image: url(../img/SVG/Footer.svg);
     background-size: cover;
 }
