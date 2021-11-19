@@ -104,7 +104,7 @@ a.nav-link {
 label[for="search"] {
     /* border: 1px solid  lightgray; */
     position: relative;
-    width: 100%;
+    width: 50%;
     height: fit-content;
     
 }
@@ -119,6 +119,7 @@ label[for="search"] input{
     outline: 1px solid  lightgray;
     border-radius: 40px;
     outline-offset:3px ;
+    width: 100%;
 }
 label[for="search"] input:focus{
     outline: 1px solid  #000;
@@ -281,16 +282,23 @@ img.card-img-top {
     overflow: hidden;
     aspect-ratio: initial;
 }
+
+@media (max-width: 1047px) {
+    .menu p {
+        font-size: small;
+    }
+}
 @media (max-width: 991.98px) {
+  
     label[for="search"] input {
-        width: 100%;
+        width: 50%;
         padding: 10px 16px;
     }
     li.nav-item a::after {
     display: none;
     }
     .menu p {
-        font-size: x-small;
+        font-size: xx-small;
         font-weight: bold;
     }
     .menu {
@@ -301,8 +309,13 @@ img.card-img-top {
     }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 575px) {
+    .sp-input-group {
+        justify-content: center;
+    }
+}
+    @media (max-width: 768px) {
+        
     img.card-img-top {
         height: initial;
     }
@@ -430,6 +443,7 @@ img.card-img-top {
 }
 
 .sp-input-group #email {
+    width: 70%;
     border-radius: 4px 0 0 4px;
 }
 
@@ -454,18 +468,16 @@ img.card-img-top {
 }
 
 .sp-footer img {
-    margin: 0 auto;
     width: 80%;
     max-width: 150px;
 }
 
 .sp-footer .icons i {
-    font-size: large;
+    font-size: x-large;
 }
 
 .sp-footer .icons {
     width: 70%;
-    margin: 1em auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -535,8 +547,13 @@ li.nav-item a::after{
 }
 
 @media screen and (min-width: 768px) {
-
-
+ 
+    .logo-icons {
+        display: inline-block;
+    }
+    .sp-footer .icons {
+        justify-content: space-between;
+    }
     li.nav-item a:hover::after, li.nav-item a.active::after {
         width: 120%;
         transition: .4s;
