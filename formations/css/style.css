@@ -101,6 +101,7 @@ header {
 a.nav-link {
     font-weight: 900;
 }
+
 label[for="search"] {
     /* border: 1px solid  lightgray; */
     position: relative;
@@ -288,10 +289,16 @@ img.card-img-top {
         font-size: small;
     }
 }
+
+@media (max-width: 1024px) {
+    label[for="search"] {
+        width: auto;
+    }
+}
 @media (max-width: 991.98px) {
   
     label[for="search"] input {
-        width: 50%;
+        width: 100%;
         padding: 10px 16px;
     }
     li.nav-item a::after {
@@ -319,6 +326,7 @@ img.card-img-top {
     img.card-img-top {
         height: initial;
     }
+ 
     label[for="search"] input{
         width: 100%;
         padding: 10px 16px;
@@ -590,6 +598,10 @@ li.nav-item a::after{
         width: 50%;
         max-width: 100px;
         height: auto;
+    }
+    .partenariat-card{
+        max-width: 340px;
+        margin: 0 auto;
     }
 
     
